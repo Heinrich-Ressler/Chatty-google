@@ -4,7 +4,7 @@ from starlette.requests import Request
 from starlette.responses import RedirectResponse
 from starlette.middleware.sessions import SessionMiddleware
 from authlib.integrations.starlette_client import OAuth, OAuthError
-from .config import CLIENT_ID, CLIENT_SECRET
+from app.config import CLIENT_ID, CLIENT_SECRET, URI_RE
 from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()

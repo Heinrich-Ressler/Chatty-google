@@ -3,15 +3,13 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
+  position: relative;
 }
 
 .container {
-  width: 160px;   /* в 5 раз меньше */
-  height: 160px;  /* в 5 раз меньше */
+  width: 160px;
+  height: 160px;
   background-color: #ffffff;
   padding: 0.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -21,6 +19,10 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .container img {
@@ -37,16 +39,26 @@ body {
 }
 
 a.button {
-  background-color: #4285f4;
-  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: #ffffff;
+  color: #444;
   text-decoration: none;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.7rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
   border-radius: 4px;
-  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
 }
 
 a.button:hover {
-  background-color: #357ae8;
+  background-color: #f7f7f7;
 }
 
+a.button img {
+  width: 14px;
+  height: 14px;
+}

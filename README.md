@@ -1,1 +1,1 @@
-# Auth Service README
+# Auth Service с email подтверждением

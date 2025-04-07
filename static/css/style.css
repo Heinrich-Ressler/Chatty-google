@@ -1,64 +1,52 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
-    height: 50vh;
-    width: 25vw;
-    display: flex;
-    padding-block: 2rem;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #47616c;
-    border-radius: 12px;
+  width: 160px;   /* в 5 раз меньше */
+  height: 160px;  /* в 5 раз меньше */
+  background-color: #ffffff;
+  padding: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
 }
 
-.img-box {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    overflow: hidden;
+.container h2 {
+  font-size: 0.8rem;
+  margin: 0.2rem 0;
 }
 
-.img {
-    width: 100%;
+a.button {
+  background-color: #4285f4;
+  color: white;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.7rem;
+  border-radius: 4px;
+  display: inline-block;
 }
 
-.google-btn {
-    display: flex;
-    align-items: center;
-    background-color: #47616c;
-    color: white;
-    width: 200px;
-    height: 50px;
-    border-radius: 5px;
-    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-    padding-inline: 8px;
-    text-decoration: none;
+a.button:hover {
+  background-color: #357ae8;
 }
 
-.google-icon {
-    background: url("https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg") transparent 5px 50% no-repeat;
-    display: inline-block;
-    vertical-align: middle;
-    width: 35px;
-    height: 50px;
-}
-
-.btn-text {
-    margin-left: 10px;
-}

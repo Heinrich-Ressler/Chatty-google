@@ -1,6 +1,12 @@
 fastapi
+uvicorn[standard]
 sqlalchemy
-pydantic
-passlib
-python-jose
-...
+asyncpg
+alembic
+python-dotenv
+pydantic-settings
+passlib[bcrypt]
+email-validator
+aiofiles
+httpx
+python-jose[cryptography]
